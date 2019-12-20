@@ -156,4 +156,48 @@ switch(room)
 	draw_set_color(c_white);
 	break;
 	
+	case lvl_repeat_loop:
+	draw_set_font(fnt_info);
+	draw_text(room_width * .5, 32, "Repeat Loop");
+	draw_set_font(fnt_small);
+	draw_text(room_width * .5, 92, "Repeats a statement multiple times.\nrepat(n) will run what is between curly braces n times\nThis type of loop useful when you don't need to know where you are in the loop");
+	draw_set_color(c_green);
+	draw_set_font(fnt_info);
+	draw_text(room_width * .5, 160, "Press button to run repeat loop");
+	draw_set_color(c_white);
+	break;
+	
+	case lvl_for_loop:
+	draw_set_font(fnt_info);
+	draw_text(room_width * .5, 32, "For Loops");
+	draw_set_font(fnt_small);
+	draw_text(room_width * .5, 92, "Repeat a statement multiple times.  for(staring, until, by value)");
+	draw_set_color(c_green);
+	draw_set_font(fnt_info);
+	draw_text(room_width * .5, 160, "Press button to run for loop");
+	draw_set_color(c_white);
+	break;
+	
+	case lvl_sprite_origin:
+	draw_set_font(fnt_info);
+	draw_text(room_width * .5, 32, "Sprite Origin");
+	draw_set_font(fnt_small);
+	draw_text(room_width * .5, 92, "game renders sprite from sprite origin.\ngame rotates sprite around sprite origin\nsprite origin defaults to top left\nobject snaps to grid in level with grid snap set to on");
+	draw_set_color(c_green);
+	draw_set_font(fnt_info);
+	draw_text(room_width * .5, 160, "Press button to position sprite");
+	draw_set_color(c_white);
+	break;
+	
+	case lvl_move_to_location:
+	draw_set_font(fnt_info);
+	draw_text(room_width * .5, 32, "Move Object");
+	draw_set_font(fnt_small);
+	draw_text(room_width * .5, 92, "move_towards_point(x, y, speed);\nmoves toward x and y position at a given speed in pixels per step\nit will often overshoot (based on speed) and then vibrate back and forth at end like here");
+	draw_set_color(c_green);
+	draw_set_font(fnt_info);
+	draw_text(room_width * .5, 160, "Press button to trigger object move");
+	draw_set_color(c_white);
+	break;
+	
 }

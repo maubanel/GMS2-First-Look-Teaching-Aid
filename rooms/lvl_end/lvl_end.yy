@@ -2,7 +2,7 @@
 {
     "name": "lvl_end",
     "id": "bca3615b-15f5-47a6-a453-89a7a55069e8",
-    "creationCodeFile": "",
+    "creationCodeFile": "RoomCreationCode.gml",
     "inheritCode": false,
     "inheritCreationOrder": false,
     "inheritLayers": false,
@@ -92,7 +92,7 @@
         "modelName": "GMRoomSettings",
         "persistent": false,
         "mvc": "1.0",
-        "Width": 1024
+        "Width": 1280
     },
     "mvc": "1.0",
     "views": [
